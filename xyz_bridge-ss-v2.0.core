@@ -1,0 +1,16 @@
+CAPI=2:
+
+name: "bci:cad:xyz_bridge:2.0"
+description: "Tool Bridge script for Xyz tool suite."
+
+filesets:
+  xyz_bridge:
+    files:
+      - xyz.py
+    file_type: toolBridgeSource
+
+targets:
+  default:
+    filesets:
+      - xyz_bridge
+

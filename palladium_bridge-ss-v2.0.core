@@ -1,0 +1,15 @@
+CAPI=2:
+
+name: "bci:cad:palladium_bridge:2.0"
+description: "EDA Bridge script for Palladium tool suite."
+
+filesets:
+  python_src:
+    files:
+      - palladium.py
+    file_type: edaBridgeSource
+
+targets:
+  default:
+    filesets:
+      - python_src
