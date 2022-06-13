@@ -1,16 +1,18 @@
 CAPI=2:
 
 name: "bci:cad:xyz_bridge:2.0"
-description: "Tool Bridge script for Xyz tool suite."
+description: "Tool Bridge script for Xyz tool."
 
 filesets:
   xyz_bridge:
     files:
       - xyz.py
-    file_type: toolBridgeSource
+    file_type: dagogoPluginSource
 
 targets:
-  default:
+  sim:
+    default_tool: xyz
     filesets:
       - xyz_bridge
+    toplevel: xyz_bridge
 

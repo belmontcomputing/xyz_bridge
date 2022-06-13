@@ -6,15 +6,12 @@ import os
 import logging
 import trace
 
-## TODO: Change edatool to tool_bridge!!!
-## from edalize.tool_bridge import ToolBridge
-from edalize.edatool import Edatool
+from dagogo.eda_bridge.eda_bridge import EdaBridge
 
 logger = logging.getLogger(__name__)
 
 
-#class XyzBridge(ToolBridge):
-class Xyz(Edatool):
+class Xyz(EdaBridge):
 
     argtypes = []
     tool_options = {}
